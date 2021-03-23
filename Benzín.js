@@ -1,9 +1,9 @@
-// BenzÌn.gs
+// Benz√≠n.gs
 //
 "use strict"
 //
 function prevedEuroNaKoruny(euro){
-  if(typeof euro != "number") throw "VstupnÌ hodnota musÌ b˝t ËÌslo";
+  if(typeof euro != "number") throw "Vstupn√≠ hodnota mus√≠ b√Ωt ƒç√≠slo";
   return euro*ziskejKurz_();
 }
 function ziskejKurz_(){
@@ -189,7 +189,7 @@ function g_MapyT(sLink){
   var page = UrlFetchApp.fetch(contestURL);
   var test = page.getContentText();
 
-  // BenzÌn	33,90 KË
+  // BenzÔøΩn	33,90 KÔøΩ
   var regExp = new RegExp('\\d\\d\\,\\d\\d', 'im');
   var value1 = regExp.exec(page.getContentText()).toString();
 
@@ -217,8 +217,8 @@ function g_MapyL(sLink){
   //  var regExp = new RegExp('price.*?CZK', 'im');
   //  var value1 = regExp.exec(page.getContentText()).toString();
 
-//><span itemprop="price" content="33.90">33,90 KË</span><meta content="CZK"
-  var regExp = new RegExp('price', 'im');
+//><span itemprop="price" content="33.90">33,90 Kƒç</span><meta content="CZK"
+var regExp = new RegExp('price', 'im');
   var value1 = regExp.exec(page.getContentText());
 
   // vyhodit: <sup>
@@ -387,7 +387,7 @@ function g_Rothbury(){
 
 // =============================================================================
 // Rothbury - https://rothbury.cz/cerpaci-stanice/verejna-cerpaci-stanice-olomoucka-brno
-// https://www.facebook.com/tankovacimat   - Natural 28,79 KË/L
+// https://www.facebook.com/tankovacimat   - Natural 28,79 Kƒç/L
 function g_Rothbury2(){
   var contestURL = 'https://www.facebook.com/tankovacimat';
   var page = UrlFetchApp.fetch(contestURL);
@@ -395,7 +395,7 @@ function g_Rothbury2(){
   // Logger.log('page: ' + page );
 
   // 95\:[^]*?tr
-  var regExp = new RegExp('natural.*KË', 'i');
+  var regExp = new RegExp('natural.*Kƒç', 'i');
   var regExp = new RegExp('NATURAL.95.+DIESEL', 'i');
   Logger.log('regExp: ' + regExp );
   var value1 = regExp.exec(page.getContentText()).toString();

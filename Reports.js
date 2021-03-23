@@ -2,7 +2,7 @@
 //
 "use strict"
 // Konfigurace 28.11.2017
-var cAppName = "pegBatTool:Benzín";
+var cAppName = "pegBatTool:BenzÃ­n";
 var cAppVerz = "v1.00";
 var CrLf     = '\n';
 // =============================================================================
@@ -75,7 +75,7 @@ function t_Chk() {
   var sLog = '';
   // Kontrola zmen tj. nenulova hodnota, sloupec D radky 2 az 9
   for(var i = 2; i <= 10; i++){
-    // Oprava "#ERROR!" ve sloupce Døíve
+    // Oprava "#ERROR!" ve sloupce DÅ™Ã­ve
     var CenaB = sheetCeny.getRange('b'+i).getValue()
     var Drive = sheetCeny.getRange('c'+i).getValue()
     Logger.log('i: ' + i +' CenaB: ' +  CenaB+' Drive: ' +  Drive);
@@ -112,7 +112,7 @@ function t_Chk() {
     var now = new Date();
     // Definice emailu
     var EmailAdr = 'pegerle+pegBatTool@gmail.com';
-    var sSubject = cAppName+':'+cAppVerz+' - zmìna ceny';
+    var sSubject = cAppName+':'+cAppVerz+' - zmÄ›na ceny';
     var BodyText = sLog;
     BodyText += CrLf + sSubject;
     BodyText += CrLf + 'The time is: ' + now.toString();
@@ -178,7 +178,7 @@ function t_RptMail() {
   var BodyText = sSubject;
   BodyText += CrLf + 'The time is: ' + now.toString();
 
-  // Vyplnìní hodnot - kolonky A1-B9
+  // VyplnÄ›nÃ­ hodnot - kolonky A1-B9
   var sheetCeny = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Ceny');
   BodyText += CrLf+CrLf + 'Kdo \t\t Cena';
   for(var i = 2; i <= 10; i++){
@@ -199,7 +199,7 @@ function t_RptMail() {
 // =============================================================================
 // Aktualizuje titulek grafu - Titles in Google Sheets Charts - https://is.gd/3s8a16
 function t_GrafNazev1() {
-  const updatedTitle = "Ceny Benzínu v Brnì: ";
+  const updatedTitle = "Ceny BenzÃ­nu v BrnÄ›: ";
   // Datum beru z bunky k1
   var sheetCeny = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Ceny');
   datum = sheetCeny.getRange('k1').getValue(),
@@ -216,7 +216,7 @@ Sheets.Spreadsheets.batchUpdate({requests: [{updateChartSpec: chart}]}, ssId);
 // =============================================================================
 // Aktualizuje titulek grafu - Titles in Google Sheets Charts - https://is.gd/3s8a16
 function t_GrafNazev2() {
-  const updatedTitle = "Vývoj cen Benzínu v Brnì: ";
+  const updatedTitle = "VÃ½voj cen BenzÃ­nu v BrnÄ›: ";
   // Datum beru z bunky k1
   var sheetCeny = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Ceny');
   datum = sheetCeny.getRange('k1').getValue(),
