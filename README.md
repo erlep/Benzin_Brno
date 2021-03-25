@@ -6,6 +6,11 @@ zzzzzzzzzzzz
 
 <iframe style="border:none" src="https://frame.mapy.cz/s/lohezoreba" width="100%" height="480" frameborder="0"></iframe>
 zzzzzzzzzzz
+v2
+
+<iframe style="border:none" src="https://frame.mapy.cz/s/gecakahufe" width="100%" height="333" frameborder="0"></iframe>
+
+zzzzzzzzzzzzz
 
 ![Benzin-Akt](https://docs.google.com/spreadsheets/d/e/2PACX-1vStPblBtmg4O4ddc6pOF9edeu-IzfsjxmynNpqzs3me9czw5K1aIIBw4HW9Cni9vM7Kse8QQTh0GG8a/pubchart?oid=678203108&format=image)
 
