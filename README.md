@@ -1,4 +1,4 @@
-# Benzin_Brno - Natural 95 prices in Brno.
+# Benzin_Brno - Natural 95 prices in Brno
 
 Google Sheet script to monitor petrol prices in Brno city.
 
