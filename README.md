@@ -20,8 +20,11 @@ Benzin_Brno na Mapy.Cz: https://frame.mapy.cz/s/lohezoreba
 
 ## made by peg - https://GitHub.com/ErleP
 
-pokus
+pokus v2
+interactive
+
+![Benzin-Akt](https://docs.google.com/spreadsheets/d/e/2PACX-1vStPblBtmg4O4ddc6pOF9edeu-IzfsjxmynNpqzs3me9czw5K1aIIBw4HW9Cni9vM7Kse8QQTh0GG8a/pubchart?oid=678203108&format=interactive)
 
 https://is.gd/H0UDma
 
-![Benzin-Akt](https://is.gd/H0UDma)
+https://docs.google.com/spreadsheets/d/e/2PACX-1vStPblBtmg4O4ddc6pOF9edeu-IzfsjxmynNpqzs3me9czw5K1aIIBw4HW9Cni9vM7Kse8QQTh0GG8a/pubchart?oid=678203108&format=interactive
